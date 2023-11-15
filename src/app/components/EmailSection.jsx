@@ -14,7 +14,7 @@ const EmailSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Nice to meet you!");
+    alert("This feature will be updated soon!");
     setFormValue({
       email: "",
       subject: "",
@@ -27,7 +27,7 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+    <section className="grid md:grid-cols-2 mb-12 md:mb-12 py-24 gap-4">
       <div>
         <h5 className="text-xl font-bold text-white my-2">{`Let's Connect`}</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">

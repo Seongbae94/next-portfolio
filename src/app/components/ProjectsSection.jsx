@@ -9,18 +9,27 @@ const projectsData = [
     title: "Travel blog",
     description: "A MERN project with the use of basic CRUD",
     image: "/images/projects/1.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Mobile", "Web"],
+    gitUrl: "https://github.com/Seongbae94/MERN_PROJECT",
+    previewUrl: "https://react-front-eight.vercel.app",
   },
   {
     id: 2,
-    title: "Travel blog",
-    description: "A MERN project with the use of basic CRUD",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Kakao clone",
+    description: "A clone project done in bootcamp",
+    image: "/images/projects/bootcamp3.png",
+    tag: ["All", "Bootcamp", "Web"],
+    gitUrl: "https://github.com/Seongbae94/frontendClone",
+    previewUrl: "https://frontend-clone-psi.vercel.app/home",
+  },
+  {
+    id: 3,
+    title: "Todo-list",
+    description: "A simple project done by using basic react hooks in bootcamp",
+    image: "/images/projects/bootcamp2.png",
+    tag: ["All", "Bootcamp", "Web"],
+    gitUrl: "https://github.com/Seongbae94/reactWeek2forVercel",
+    previewUrl: "https://react-week2for-vercel.vercel.app",
   },
 ];
 
@@ -55,6 +64,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Bootcamp"
+          isSelected={tag === "Bootcamp"}
         />
       </div>
       <div>
