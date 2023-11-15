@@ -1,10 +1,31 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  const [formValue, setFormValue] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Nice to meet you!");
+    setFormValue({
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
+  const handleFormValue = (type, value) => {
+    setFormValue((prev) => ({ ...prev, [`${type}`]: value }));
+  };
+
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
       <div>
@@ -24,7 +45,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -38,6 +59,8 @@ const EmailSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gary-100 text-sm rounded-lg block w-full p-2.5 text-white"
               placeholder="test@test.com"
+              onChange={(e) => handleFormValue("email", e.target.value)}
+              value={formValue.email}
             />
           </div>
           <div className="mb-6">
@@ -53,6 +76,8 @@ const EmailSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gary-100 text-sm rounded-lg block w-full p-2.5 text-white"
               placeholder="just saying hi"
+              onChange={(e) => handleFormValue("subject", e.target.value)}
+              value={formValue.subject}
             />
           </div>
           <div className="mb-6">
@@ -67,6 +92,8 @@ const EmailSection = () => {
               id="message"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gary-100 text-sm rounded-lg block w-full p-2.5 text-white"
               placeholder="Let's talk about..."
+              onChange={(e) => handleFormValue("message", e.target.value)}
+              value={formValue.message}
             />
           </div>
           <button
