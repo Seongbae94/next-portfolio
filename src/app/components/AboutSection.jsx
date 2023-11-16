@@ -28,15 +28,11 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Experiences",
+    id: "experiences",
     content: (
       <ul className="list-disc pl-2">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Next</li>
+        <li>Frontend developer in Duego System (8 months)</li>
       </ul>
     ),
   },
@@ -78,10 +74,10 @@ const AboutSection = () => {
               Education
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("experiences")}
+              active={tab === "experiences"}
             >
-              Certifications
+              Experiences
             </TabButton>
           </div>
           <div className="mt-8">

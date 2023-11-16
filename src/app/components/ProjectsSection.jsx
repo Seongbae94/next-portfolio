@@ -9,7 +9,7 @@ const projectsData = [
     title: "Travel blog",
     description: "A MERN project with the use of basic CRUD",
     image: "/images/projects/1.png",
-    tag: ["All", "Mobile", "Web"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/Seongbae94/MERN_PROJECT",
     previewUrl: "https://react-front-eight.vercel.app",
   },
@@ -30,6 +30,15 @@ const projectsData = [
     tag: ["All", "Bootcamp", "Web"],
     gitUrl: "https://github.com/Seongbae94/reactWeek2forVercel",
     previewUrl: "https://react-week2for-vercel.vercel.app",
+  },
+  {
+    id: 4,
+    title: "Dice-game",
+    description: "A simple dice game project",
+    image: "/images/projects/tenzies.png",
+    tag: ["All", "Game"],
+    gitUrl: "https://github.com/Seongbae94/Tenzies",
+    previewUrl: "https://tenzies-w16q.vercel.app",
   },
 ];
 
@@ -62,8 +71,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Game"
+          isSelected={tag === "Game"}
         />
         <ProjectTag
           onClick={handleTagChange}
