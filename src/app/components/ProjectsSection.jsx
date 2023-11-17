@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Travel blog",
     description: "A MERN project with the use of basic CRUD",
-    image: "/images/projects/1.png",
+    image: "../../../public/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Seongbae94/MERN_PROJECT",
     previewUrl: "https://react-front-eight.vercel.app",
