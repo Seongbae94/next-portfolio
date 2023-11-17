@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+  console.log(imgUrl);
   return (
     <div>
       <div
@@ -11,7 +12,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         // style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <Image
-          src={imgUrl}
+          // src={imgUrl}
+          src={"/images/projects/1.png"}
           layout="fill"
           objectFit="cover"
           className="rounded-t-xl"
