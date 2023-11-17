@@ -12,8 +12,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         // style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <Image
-          // src={imgUrl}
-          src={"/images/hero-image.png"}
+          src={imgUrl}
           layout="fill"
           objectFit="cover"
           className="rounded-t-xl"
