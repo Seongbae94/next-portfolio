@@ -13,7 +13,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
       >
         <Image
           // src={imgUrl}
-          src={"/images/projects/1.png"}
+          src={"/images/hero-image.png"}
           layout="fill"
           objectFit="cover"
           className="rounded-t-xl"
