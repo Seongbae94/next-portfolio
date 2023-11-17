@@ -12,13 +12,20 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         // style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <Image
+          src="/images/hero-image2.png"
+          alt="hero image"
+          className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
+          width={300}
+          height={300}
+        />
+        {/* <Image
           // src={imgUrl}
           src={"/images/hero-image.png"}
           layout="fill"
           objectFit="cover"
           className="rounded-t-xl"
           alt="project card"
-        />
+        /> */}
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
           <Link
             target="_blank"
