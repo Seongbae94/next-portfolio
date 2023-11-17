@@ -59,7 +59,12 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">It is me</p>
+          <p className="text-base lg:text-lg">
+            Completed React bootcamp course and worked as a frontend devleoper
+            for 8 months in Korea. Commmunicated with frontend/backend
+            developers to build company solutions and do troubleshooting.
+            Familiar with using CSS, Javascript, React and furthermore Next.
+          </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
