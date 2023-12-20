@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Travel blog",
+    title: "Food Master",
     description: "A MERN project with the use of basic CRUD",
-    image: "/static/img/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Seongbae94/MERN_PROJECT",
-    previewUrl: "https://react-front-eight.vercel.app",
+    image: "/static/img/mernimage.png",
+    tag: ["All", "Web", "Mern"],
+    gitUrl: "https://github.com/Seongbae94/mern-recipe",
+    previewUrl: "https://mern-recipe.vercel.app/",
   },
   {
     id: 2,
@@ -81,6 +81,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Game"
           isSelected={tag === "Game"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Mern"
+          isSelected={tag === "Mern"}
         />
         <ProjectTag
           onClick={handleTagChange}
