@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Food Master",
     description: "A MERN project with the use of basic CRUD",
-    image: "/static/img/mernimage.png",
+    image: "/static/img/1.png",
     tag: ["All", "Web", "Mern"],
     gitUrl: "https://github.com/Seongbae94/mern-recipe",
     previewUrl: "https://mern-recipe.vercel.app/",
